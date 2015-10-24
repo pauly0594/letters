@@ -31,8 +31,6 @@ function setup() {
   rows = floor(20);
   // Wacky way to make a 2D array is JS
 
-  a = [ "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-
   
   board = new Array(columns);
   for (var i = 0; i < columns; i++) {
@@ -47,14 +45,11 @@ function setup() {
 }
 
 function myFunction() {
-    var b =  "happy";
-     var c =  "sad";
-     var  bc = [b , c];
-     return bc;
-    var x = Math.floor((Math.random() * bc.length) + 1);
-    return bc.charAt(x);
-} 
-console.log(myFunction());
+var b = "happy";
+var x = Math.floor((Math.random() * b.length) + 1);
+return b.charAt(x);
+}
+console.log(myFunction())
 
 
 
